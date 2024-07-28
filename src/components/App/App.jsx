@@ -31,7 +31,7 @@ export default function App() {
     }, []);
 
     useEffect(() => {
-        localStorage.getItem("num-of-clicks", JSON.stringify(feedback))
+        localStorage.setItem("num-of-clicks", JSON.stringify(feedback))
     }, [feedback])
 
     const resetFeedback = () => {
